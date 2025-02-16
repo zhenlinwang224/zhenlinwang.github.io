@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#map1, #map2 {
+    flex: 1;
+    height: 100vh;
+}
+
+.controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+
+#month-selector {
+    position: absolute;
+    top: 10px;  
+    left: 10px;  
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+#crime-filter-container {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;  
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+
+#heatmap-toggle-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2000; 
+}
+
+
+#heatmap-toggle-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#heatmap-toggle-container button:hover {
+    background-color: #0056b3;
+}
+

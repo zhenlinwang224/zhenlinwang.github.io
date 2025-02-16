@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>assignment</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMD & Crime Comparison</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Month Select & button -->
+<div id="month-selector">
+    <label for="month1">Select Month 1:</label>
+    <select id="month1">
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+    </select>
+
+    <label for="month2">Select Month 2:</label>
+    <select id="month2">
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+    </select>
+
+    <button id="updateMap">Update Maps</button>
+</div>
+  
+  <!-- Crime type screening -->
+<div id="crime-filter-container">
+    <h3>Filter Crime Type:</h3>
+    <input type="checkbox" class="crime-filter" value="Violence and sexual offences" checked> Violence <br>
+    <input type="checkbox" class="crime-filter" value="Burglary" checked> Burglary <br>
+    <input type="checkbox" class="crime-filter" value="Robbery" checked> Robbery <br>
+    <input type="checkbox" class="crime-filter" value="Drugs" checked> Drugs <br>
+</div>
+  
+</div>
+
+    <!--  Map container  -->
+    <div id="map-container">
+        <div id="map1"></div>
+        <div id="map2"></div>
+    </div>
+
+ <div id="stats-left" class="stats-box">Left Map Stats</div>
+<div id="stats-right" class="stats-box">Right Map Stats</div> 
+  
+<div id="heatmap-toggle-container">
+    <button id="toggleHeatmap">Toggle Heatmap</button>
+</div>
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
